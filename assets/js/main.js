@@ -34,15 +34,12 @@ var otherStudents = [
 
 for(var i = 0; i < otherStudents.length; i++) {
     var studentEl = otherStudents[i];
-
-    for(var key in studentEl) {
-        console.log(key, studentEl[key]);
-    }
+    console.log(studentEl.name, studentEl.lastName);
+    
 }
 //Dare la possibilità all’utente, attraverso 3 prompt(),
 //di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
 
-console.log(otherStudents);
 var nomeUtente = prompt('Inserisci nome');
 var cognomeUtente = prompt('Inserisci cognome');
 var etaUtente = Number(prompt('Inserisci età'));
@@ -54,3 +51,4 @@ var listaUtente = {
 };
 
 otherStudents.push(listaUtente);
+console.log(otherStudents);
